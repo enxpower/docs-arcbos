@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SnowBot Introduction</title>
+<link rel="canonical" href="https://docs.arcbos.com/clients/demo/snowbot-intro/">
+<meta name="description" content="(Baseline v1.0 · Mandatory Chapter · Must Not Be Skipped)">
+<meta name="robots" content="index,follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ARCBOS External Documents">
+<meta property="og:title" content="SnowBot Introduction">
+<meta property="og:description" content="(Baseline v1.0 · Mandatory Chapter · Must Not Be Skipped)">
+<meta property="og:url" content="https://docs.arcbos.com/clients/demo/snowbot-intro/">
+<meta property="og:image" content="https://docs.arcbos.com/assets/share/default.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SnowBot Introduction">
+<meta name="twitter:description" content="(Baseline v1.0 · Mandatory Chapter · Must Not Be Skipped)">
+<meta name="twitter:image" content="https://docs.arcbos.com/assets/share/default.png">
+
+<link rel="stylesheet" href="/assets/base.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
+<body>
+<main>
+  <div class="header-flex">
+    <h1>SnowBot Introduction</h1>
+    <img class="barcode" alt="Barcode ARCECNZD14079" src="data:image/png;base64,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">
+  </div>
+
+  <article><pre class="n-code-notion"><code class="language-javascript">《微电网并离网控制与仿真系统工程理论基线（Baseline v1.0）》
+封存级 TOC（连续树状结构）
+
+0. 文档定位、封存声明与使用边界
+├─ 0.1 文档性质与工程级别定义
+│  ├─ Baseline / Design Basis / Control Constitution 的工程含义
+│  ├─ 原则层 / 机制层 / 参数层 / 实现层的分层定义
+│  └─ 本文档在 EMS / 仿真系统 / EPC 审图中的地位
+├─ 0.2 封存原则
+│  ├─ 允许演进：参数、实现方式、UI 表达
+│  ├─ 禁止推翻：控制哲学、保护优先级、失败定义
+│  └─ 版本升级触发条件（控制逻辑或保护逻辑变化）
+└─ 0.3 适用系统边界
+   ├─ 适用：AC Microgrid（Grid + Diesel + BESS + PV + Wind）
+   ├─ 必须具备 PCC 且 PCC 可控
+   └─ 不覆盖：纯并网、HVDC-only、无 PCC 拓扑
+
+1. 微电网的物理本质与控制问题重述
+├─ 1.1 微电网与大电网的本质差异
+│  ├─ Infinite Bus 假设在岛网侧的失效
+│  ├─ 低惯量系统的敏感性来源
+│  └─ 控制对象由“电压源”转为“功率平衡”
+├─ 1.2 三大不可逃避工程约束
+│  ├─ 功率平衡不可违反
+│  ├─ 惯量缺失或不足
+│  └─ 控制延迟（采样 / 滤波 / 执行）
+└─ 1.3 稳定的工程定义
+   ├─ 稳定 ≠ 静止
+   ├─ 稳定 = 可控的动态过程
+   └─ 稳定 = Correct Failure（允许失败但必须正确）
+
+2. 功率平衡：唯一的一阶控制真理
+├─ 2.1 瞬时功率平衡方程（工程级）
+│  ├─ 多电源并列功率求和
+│  ├─ P_grid / P_dg / P_bess / P_load 符号体系
+│  └─ 损耗项在仿真中的工程处理原则
+├─ 2.2 功率不平衡的系统后果
+│  ├─ 功率不平衡 → 频率漂移（df/dt）
+│  ├─ 功率不平衡 → 电压下陷
+│  └─ UVLS 触发的物理合理性
+└─ 2.3 “不自动变稳”是正确设计
+   ├─ 反对硬编码稳定
+   ├─ 反对 UI 稳定而内核不守恒
+   └─ 稳定必须付出功率代价
+
+3. 频率：状态量，而非控制目标
+├─ 3.1 频率动态的物理来源
+│  ├─ 等效摆动方程
+│  ├─ df/dt 与等效惯量 H_eq
+│  └─ 测量与滤波对频率显示的影响
+├─ 3.2 RoCoF 的工程意义
+│  ├─ 频差与变化率的本质区别
+│  ├─ RoCoF 作为失稳先兆
+│  └─ RoCoF 保护的合理性
+└─ 3.3 稳频的真实手段
+   ├─ 频率控制是功率控制的投影
+   ├─ 强拉频率的系统风险
+   └─ 频率不可被命令，只能被响应
+
+4. 惯量、虚拟惯量与频率支撑
+├─ 4.1 真实机械惯量（柴油机）
+│  └─ 慢响应但可持续
+├─ 4.2 虚拟惯量（VSG / Grid-forming）
+│  ├─ Droop 项
+│  ├─ 阻尼项
+│  └─ 慢积分恢复
+└─ 4.3 虚拟惯量的工程边界
+   ├─ SOC 约束
+   ├─ 功率限幅
+   └─ 短期救场，长期回归调度
+
+5. BESS：最强控制器，也是最危险的错觉
+├─ 5.1 BESS 的双重身份
+│  ├─ 快速功率平衡器
+│  └─ 有限能量缓冲器
+├─ 5.2 功率模型与符号约定
+│  ├─ P_BESS &gt; 0 放电
+│  └─ P_BESS &lt; 0 充电
+├─ 5.3 SOC 动态与长期稳定性
+│  ├─ SOC 演化公式
+│  └─ 饱和与边界处理
+└─ 5.4 常见工程错误
+   ├─ 将电池当作无限电源
+   └─ 忽略 SOC 饱和导致假稳态
+
+6. 柴油机系统：被低估的系统核心
+├─ 6.1 柴油机真实工程约束
+│  ├─ 启动延迟
+│  ├─ 最小稳定负载
+│  ├─ 爬坡率限制
+│  └─ 热备用油耗
+├─ 6.2 Droop 控制与参数范围
+│  └─ 工程默认区间
+└─ 6.3 柴油机与 BESS 的职责边界
+   ├─ 瞬态由 BESS 承担
+   └─ 稳态由柴油机兜底
+
+7. 可再生能源工程建模
+├─ 7.1 光伏（PV）模型
+│  ├─ 日内曲线
+│  ├─ 云影扰动
+│  └─ 可预测性假设
+├─ 7.2 风电（Wind）模型
+│  ├─ 随机过程
+│  ├─ 高频扰动
+│  └─ Gust 事件
+└─ 7.3 可再生能源不承担的责任
+   ├─ 不主稳频
+   └─ 不做并机裁决
+
+8. 负载建模：真实系统的起点
+├─ 8.1 负载非恒定的工程事实
+├─ 8.2 随机波动建模（OU 过程）
+│  ├─ τ（时间尺度）
+│  ├─ σ（波动强度）
+│  └─ 极值 Clamp
+└─ 8.3 设备级负载事件
+   ├─ Motor Start
+   ├─ Crusher Cycle
+   └─ 阶跃与脉冲建模
+
+9. PCC 并离网控制状态机
+├─ 9.1 PCC 的电气与控制意义
+├─ 9.2 状态机定义
+│  ├─ Grid-connected
+│  ├─ Islanded
+│  ├─ Sync-check
+│  ├─ Reclosing
+│  └─ Tripped
+└─ 9.3 “点了没合上”作为正确失败
+   └─ 条件不满足必须失败
+
+10. 同步检查（Sync-check）
+├─ 10.1 频率同步条件 |Δf| ≤ Δf_max
+├─ 10.2 电压与相位条件 |ΔV| ≤ ΔV_max
+└─ 10.3 合闸失败的解释框架
+   ├─ Failure Mode 分类
+   └─ 日志与 UI 原则
+
+11. Sync Assist：EMS 的行为边界
+├─ 11.1 EMS 不强合闸原则
+├─ 11.2 Sync Assist 控制逻辑
+│  ├─ 调功率
+│  ├─ 拉频率
+│  └─ 达标后允许合闸
+└─ 11.3 常见错误模式
+   ├─ 过强控制导致振荡
+   └─ 忽略 SOC / DG 约束
+
+12. 保护系统：高于 EMS 的最终裁决者
+├─ 12.1 保护优先级
+│  └─ Protection &gt; Control &gt; Dispatch &gt; UI
+├─ 12.2 保护机制集合
+│  ├─ UF / OF
+│  ├─ UV / OV
+│  ├─ RoCoF
+│  └─ UVLS
+└─ 12.3 保护与 EMS 的协同边界
+   └─ EMS 不得对抗保护
+
+13. Allow all-off 与热备用的工程取舍
+├─ 13.1 Allow all-off = YES
+│  ├─ 低油耗
+│  └─ 高恢复风险
+├─ 13.2 Allow all-off = NO
+│  ├─ 热备用
+│  └─ 更强恢复能力
+└─ 13.3 工程默认选择逻辑
+   └─ 可控性优先于极致省油
+
+14. 仿真系统工程设计原则（封存）
+├─ 14.1 仿真不是为了“好看”
+├─ 14.2 Correct Failure 的仿真定义
+└─ 14.3 仿真与真实系统差异边界
+   ├─ 允许差异
+   └─ 危险差异
+
+15. Baseline v1.0 封存声明
+├─ 15.1 不可变条款
+├─ 15.2 演进规则
+└─ 15.3 工程责任与使用声明
+
+附录
+├─ 附录 A｜符号、变量与工程参数表
+├─ 附录 B｜常见错误建模方式清单（反例）
+└─ 附录 C｜工程默认参数建议区间（投标口径）
+</code></pre><h1>第 0 章｜文档定位、封存声明与使用边界</h1><p><em>(Baseline v1.0 · Mandatory Chapter · Must Not Be Skipped)</em></p><hr><h2>0.1 文档性质与工程级别定义</h2><h3>0.1.1 文档类型定义</h3><p>本文档定义为：</p><ul><li><strong>工程理论基线（Engineering Baseline）</strong></li><li><strong>控制设计依据（Design Basis）</strong></li><li><strong>系统控制宪法（Control Constitution）</strong></li></ul><p>其性质明确 <strong>不是</strong>：</p><ul><li>使用手册（User Manual）</li><li>教学材料（Tutorial）</li><li>学术论文（Academic Paper）</li><li>单一项目的临时设计说明</li></ul><p>本文件的目标对象为：</p><ul><li>微电网仿真系统设计者</li><li>EMS 控制策略设计者</li><li>EPC / 业主 / 审图工程师</li><li>产品级 EMS / 控制系统架构师</li></ul><hr><h3>0.1.2 “Baseline”的工程含义</h3><p>在本文档中，“Baseline”具有严格工程含义：</p><pre class="n-code-notion"><code class="language-plain text">Baseline = 一组被明确封存的系统假设 + 控制原则 + 物理约束
+           任何实现、代码、参数调整
+           均不得违背该组原则
+</code></pre><p>其核心特征包括：</p><ul><li><strong>可被引用</strong>（Referenced）</li><li><strong>可被审计</strong>（Auditable）</li><li><strong>可被继承</strong>（Inheritable）</li><li><strong>不可被随意推翻</strong>（Non-negotiable）</li></ul><p>任何后续系统版本（v2.0 / v3.0）：</p><ul><li>只能在 Baseline 基础上 <strong>演进（Evolution）</strong></li><li>不允许在未声明的情况下 <strong>否定（Negation）</strong></li></ul><hr><h3>0.1.3 本文档在系统体系中的地位</h3><p>在完整系统工程中，本文档所处位置如下：</p><pre class="n-code-notion"><code class="language-bash">┌─────────────────────────────┐
+│  Regulatory / Grid Codes     │
+│  (IEEE, UL, IEC, etc.)       │
+└───────────────▲─────────────┘
+                │
+┌───────────────┴─────────────┐
+│  This Document               │
+│  (Microgrid Control Baseline)│
+└───────────────▲─────────────┘
+                │
+┌───────────────┴─────────────┐
+│  EMS Control Logic           │
+│  (Algorithms / State Machine)│
+└───────────────▲─────────────┘
+                │
+┌───────────────┴─────────────┐
+│  Simulation / Code / UI      │
+└─────────────────────────────┘
+</code></pre><p>即：</p><ul><li><strong>代码必须服从本文档</strong></li><li><strong>UI 不得“美化”违反本文档的行为</strong></li><li><strong>仿真失败若符合本文档逻辑，应被视为正确结果</strong></li></ul><hr><h2>0.2 封存原则（Baseline Lock Rules）</h2><h3>0.2.1 允许演进 vs 禁止推翻</h3><p>本文档定义两类修改行为：</p><pre class="n-code-notion"><code class="language-plain text">Allowed:
+- 参数范围细化
+- 控制算法实现优化
+- 数值稳定性改进
+- UI / 可视化增强（不改变内核逻辑）
+
+Forbidden:
+- 改写功率守恒逻辑
+- 绕过并离网状态机
+- 强制合闸忽略同步条件
+- 通过硬编码“消除不稳定”
+</code></pre><hr><h3>0.2.2 Baseline 版本升级触发条件</h3><p><strong>只有在以下情况出现时</strong>，才允许升级 Baseline 版本号：</p><ul><li>系统控制哲学发生变化<p>（例如：从 Grid-following 转为 Grid-forming）</p></li><li>保护与控制的优先级关系发生变化</li><li>系统适用边界发生变化<p>（例如：从 AC-only 扩展至混合 AC/DC）</p></li></ul><p><strong>单纯的实现改进，不构成版本升级理由。</strong></p><hr><h3>0.2.3 原则层 vs 实现层的严格区分</h3><pre class="n-code-notion"><code class="language-plain text">Principle Layer (Locked):
+- 功率平衡是唯一一阶真理
+- 频率是状态量，不是控制命令
+- 合闸是结果，不是指令
+- 保护系统高于 EMS
+
+Implementation Layer (Flexible):
+- 数值积分方法
+- 控制参数具体取值
+- UI 表现形式
+- 日志与可视化方式
+</code></pre><hr><h2>0.3 适用系统边界与明确不覆盖范围</h2><h3>0.3.1 本 Baseline 适用范围</h3><p>本文档适用于以下系统类型：</p><pre class="n-code-notion"><code class="language-plain text">- AC 微电网（50 / 60 Hz）
+- 单 PCC 并离网系统
+- 资源组合：
+  - Diesel Generator
+  - Battery Energy Storage System (BESS)
+  - Photovoltaic (PV)
+  - Wind
+  - Utility Grid
+- 存在 EMS 级调度与控制
+- 存在独立保护系统
+</code></pre><hr><h3>0.3.2 明确不覆盖的系统类型</h3><p>为避免误用，以下系统 <strong>明确不在本文档讨论范围内</strong>：</p><pre class="n-code-notion"><code class="language-plain text">- 纯并网系统（无 Island mode）
+- HVDC-only 微网
+- 无明确 PCC 的分布式并列系统
+- 单一电源 UPS 架构
+- 仅用于演示或教学的理想化模型
+</code></pre><hr><h3>0.3.3 仿真系统与真实系统的边界声明</h3><p>本文档适用于：</p><ul><li><strong>工程级仿真</strong></li><li><strong>控制逻辑验证</strong></li><li><strong>策略与边界分析</strong></li></ul><p>但必须明确：</p><pre class="n-code-notion"><code class="language-plain text">Simulation ≠ Reality
+但：
+违反物理直觉的仿真结果 ≠ 合格仿真
+</code></pre><p>仿真允许简化，但 <strong>不允许违背守恒与控制因果关系</strong>。</p><hr><h2>0.4 强制阅读与引用声明</h2><h3>0.4.1 强制阅读条款</h3><pre class="n-code-notion"><code class="language-plain text">任何人若试图：
+- 修改控制逻辑
+- 扩展仿真功能
+- 对系统行为作出解释
+
+在未通读第 0 章的情况下，
+其结论与实现均视为无效。
+</code></pre><hr><h3>0.4.2 引用与责任声明</h3><ul><li>本 Baseline 可作为：<ul><li>内部工程依据</li><li>EPC 技术说明附件</li><li>EMS 产品控制哲学文档</li></ul></li><li>任何偏离本 Baseline 的实现：<ul><li>必须显式声明</li><li>并承担由此产生的工程责任</li></ul></li></ul><hr><h1>第 1 章｜微电网的物理本质与控制问题重述</h1><p><em>(Baseline v1.0 · Core Theory Chapter)</em></p><hr><h2>1.1 微电网与大电网的本质差异</h2><h3>1.1.1 “无限母线”假设在微电网中的失效</h3><p>在传统大电网分析中，常采用“无限母线（Infinite Bus）”假设：</p><pre class="n-code-notion"><code class="language-plain text">- 频率恒定
+- 电压幅值恒定
+- 相角变化可忽略
+</code></pre><p>该假设的工程前提是：</p><pre class="n-code-notion"><code class="language-plain text">系统等效惯量 → 无穷大
+系统短路容量 → 极大
+单个扰动 → 对系统状态影响可忽略
+</code></pre><p><strong>微电网不满足上述任何一条。</strong></p><p>在微电网中：</p><pre class="n-code-notion"><code class="language-plain text">- 惯量低或不存在
+- 短路容量有限
+- 单个资源/负载的变化即可主导系统状态
+</code></pre><p>因此，<strong>任何将大电网分析方法直接移植到微电网的做法都是工程错误</strong>。</p><hr><h3>1.1.2 低惯量系统的直接后果</h3><p>低惯量意味着：</p><pre class="n-code-notion"><code class="language-plain text">功率不平衡 → 频率立即响应
+</code></pre><p>其工程表现为：</p><ul><li>频率对负载/风功率扰动高度敏感</li><li>RoCoF（df/dt）显著放大</li><li>传统“慢调度”策略失效</li></ul><p>这也是为何在仿真中：</p><pre class="n-code-notion"><code class="language-plain text">- 系统“看起来不稳”
+- 频率持续摆动
+</code></pre><p><strong>并不代表系统设计错误，而是物理真实。</strong></p><hr><h2>1.2 微电网的三大不可逃避约束</h2><p>微电网控制问题可被压缩为三条不可绕开的工程约束。</p><h3>1.2.1 约束一：功率平衡（Power Balance）</h3><p>在任意时间尺度（ms–s–min）：</p><p class="math-display">$$∑Psources(t)=∑Ploads(t)+Ploss(t)\sum P_{\text{sources}}(t) = \sum P_{\text{loads}}(t) + P_{\text{loss}}(t)$$</p><p>工程解释：</p><pre class="n-code-notion"><code class="language-plain text">- 不存在“先稳定、后补功率”
+- 功率守恒不是策略，是物理定律
+</code></pre><p>在仿真代码中，该约束体现为：</p><pre class="n-code-notion"><code class="language-plain text">- 所有资源功率参与同一求和
+- 频率由不平衡积分得到
+- UI 不得掩盖不平衡
+</code></pre><hr><h3>1.2.2 约束二：惯量缺失（Low / Zero Inertia）</h3><p>资源惯量对比（工程视角）：</p><pre class="n-code-notion"><code class="language-plain text">Diesel Generator  : 有限机械惯量
+BESS (Inverter)  : 电子惯量（可控）
+PV / Wind        : 零惯量
+</code></pre><p>直接结论：</p><pre class="n-code-notion"><code class="language-plain text">- 可再生资源不能“天然稳频”
+- 所有稳频行为必须由控制系统显式提供
+</code></pre><hr><h3>1.2.3 约束三：控制延迟（Control Latency）</h3><p>任何控制闭环都存在：</p><pre class="n-code-notion"><code class="language-plain text">- 测量延迟
+- 滤波延迟
+- 计算延迟
+- 执行器延迟
+</code></pre><div class="table-wrap"><table><thead><tr><th>项目</th><th>内容</th><th>预算</th></tr></thead><tbody><tr><td>路线</td><td>UL / IEEE / CE 咨询</td><td></td></tr><tr><td>预审</td><td>测试 + 差距分析</td><td></td></tr><tr><td>合计</td><td></td><td>10–15 万</td></tr></tbody></table></div><hr><h3>7.5.3 风险预留</h3><div class="table-wrap"><table><thead><tr><th>用途</th><th>预算</th></tr></thead><tbody><tr><td>设备更换</td><td></td></tr><tr><td>人员补充</td><td></td></tr><tr><td>进度兜底</td><td></td></tr><tr><td><strong>合计</strong></td><td><strong>5–10 万</strong></td></tr></tbody></table></div><hr><h2>7.6 资金释放与里程碑绑定</h2><div class="table-wrap"><table><thead><tr><th>阶段</th><th>工程里程碑</th><th>资金比例</th></tr></thead><tbody><tr><td>0–3 月</td><td>核心状态机 + 实验室上线</td><td>~30%</td></tr><tr><td>3–6 月</td><td>Beta + 多设备联调</td><td>~35%</td></tr><tr><td>6–12 月</td><td>现场试点 + V1 冻结</td><td>~35%</td></tr></tbody></table></div><hr><h2>7.7 决策层结论（可直接引用）</h2></article>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <span>© ARCBOS Systems Inc. — ENGINEERED FOR EXTREME CONDITIONS. Powered by GitHub Pages | Contact:</span>
+    <a href="mailto:info@arcbos.com">info@arcbos.com</a>
+    <span class="sep">·</span>
+    <a class="icon" href="https://www.linkedin.com/in/gongtiejing" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v13H0zM7 8h4.8v1.8h.07C12.54 8.94 14.17 8 16.6 8c5.06 0 6 3.33 6 7.66V21h-5v-6.5c0-1.55-.03-3.55-2.17-3.55-2.17 0-2.5 1.69-2.5 3.43V21H7V8z"/>
+      </svg>
+    </a>
+    <a class="icon" href="https://github.com/enxpower" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-1.1-.02-1.99-3.06.66-3.71-1.3-3.71-1.3-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.56 1.19 3.18.91.1-.72.38-1.19.69-1.46-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.42.11-2.96 0 0 .93-.3 3.05 1.13a10.7 10.7 0 0 1 2.78-.37c.94 0 1.88.13 2.78.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.54.22 2.68.11 2.96.71.77 1.13 1.75 1.13 2.95 0 4.22-2.58 5.14-5.03 5.41.39.33.73.98.73 1.98 0 1.43-.01 2.59-.01 2.95 0 .29.2.64.76.53A10.54 10.54 0 0 0 23 11.5C23 5.24 18.27.5 12 .5z"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+</main>
+
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    displayMath: [['$$','$$']]
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.min.js"></script>
+
+</body></html>
