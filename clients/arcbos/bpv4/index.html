@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARCBOS 全电 · 全自治 · 工业级极寒除雪机器人</title>
+<link rel="canonical" href="https://docs.arcbos.com/clients/arcbos/bpv4/">
+<meta name="description" content="ARCBOS 正在推进一款面向北美与欧洲市场的全电、全自治、工业级极寒除雪机器人（SnowBot），用于在夜间、无人值守条件下替代人工完成高可靠除雪作业">
+<meta name="robots" content="index,follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ARCBOS External Documents">
+<meta property="og:title" content="ARCBOS 全电 · 全自治 · 工业级极寒除雪机器人">
+<meta property="og:description" content="ARCBOS 正在推进一款面向北美与欧洲市场的全电、全自治、工业级极寒除雪机器人（SnowBot），用于在夜间、无人值守条件下替代人工完成高可靠除雪作业">
+<meta property="og:url" content="https://docs.arcbos.com/clients/arcbos/bpv4/">
+<meta property="og:image" content="https://docs.arcbos.com/assets/share/arcbos-default.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ARCBOS 全电 · 全自治 · 工业级极寒除雪机器人">
+<meta name="twitter:description" content="ARCBOS 正在推进一款面向北美与欧洲市场的全电、全自治、工业级极寒除雪机器人（SnowBot），用于在夜间、无人值守条件下替代人工完成高可靠除雪作业">
+<meta name="twitter:image" content="https://docs.arcbos.com/assets/share/arcbos-default.png">
+
+<link rel="stylesheet" href="/assets/base.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
+<body>
+<main>
+  <div class="header-flex">
+    <h1>ARCBOS 全电 · 全自治 · 工业级极寒除雪机器人</h1>
+    <img class="barcode" alt="Barcode ARCBQRWGP8509" src="data:image/png;base64,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">
+  </div>
+
+  <article><h2>1. 一句话定位</h2><p>ARCBOS 正在推进一款面向北美与欧洲市场的全电、全自治、工业级极寒除雪机器人（SnowBot），用于在夜间、无人值守条件下替代人工完成高可靠除雪作业</p><pre class="n-code-notion"><code class="language-markup">ARCBOS
+Autonomous Robotic Core for Brutal Outdoor Systems
+
+ENGINEERED FOR EXTREME CONDITIONS
+为极端工况而生
+
+全电 · 全自治 · 工业级极寒除雪机器人平台
+构建重载户外无人作业的核心基础设施</code></pre><figure><img src="/assets/images/arcbos/bpv4/image.png" alt=""><figcaption></figcaption></figure><hr><h2>2. 核心问题</h2><p>欧美商业与工业场所长期存在结构性问题：</p><ol><li>夜间与极寒条件下人工除雪成本高、组织难度大、不可持续</li><li>传统除雪设备依赖人工驾驶，无法无人连续运行</li><li>现有机器人方案在 −30℃、湿雪、重载条件下可靠性不足，难以长期部署 </li></ol><p>市场不缺动作能力设备，缺的是：</p><blockquote><p>在极端环境下长期、稳定、无人运行的工业级系统</p></blockquote><hr><h2>3. 核心竞争力</h2><p>我们的优势不在功能数量，而在<strong>工业级系统能力</strong>。</p><h3>平台级能力</h3><ol><li>全电驱架构，匹配零排放与长期运维趋势</li><li>面向 −30℃连续运行的系统级设计能力</li><li>电驱、能源、结构与自治系统的深度协同</li><li>完整的 Fail-safe 与 Fail-degraded 安全体系</li><li>无人值守与远程运维的一体化管理能力</li></ol><hr><h3>所解决的核心问题</h3><ul><li>夜间与极端天气下的人力不可控</li><li>高风险作业带来的组织与合规压力</li><li>安全与保险责任不确定性</li><li>临时调度与人工成本波动</li></ul><hr><h3>我们提供的价值</h3><pre class="n-code-notion"><code class="language-plain text">在极端环境下的稳定运行能力
+        =
+组织层面的确定性</code></pre><h2>4. 与 Yarbo / Navimow 的差异</h2><p>Yarbo、Navimow 属于消费或轻商业场景：</p><ul><li>可控环境</li><li>轻载工况</li><li>用户体验导向</li></ul><p>ARCBOS 面向：</p><ul><li>商业园区</li><li>物流中心</li><li>数据中心</li><li>医疗与教育机构</li></ul><p>难度级别不同，失败成本不同。</p><hr><h2>5. 趋势判断</h2><p>趋势不是“机器人替代人”。</p><p>趋势是：</p><ul><li>用工结构变化</li><li>极端气候频率提升</li><li>商业园区无人化需求</li><li>零排放政策推动</li></ul><p>在高失败成本场景中，</p><blockquote><p>工程可靠的无人系统将形成头部企业窗口期（3–5 年）。</p></blockquote><hr><h2>6. 产品发展路径</h2><pre class="n-code-notion"><code class="language-markup">产品发展路径
+│
+├─ Phase 1：极端雪工况工程验证
+│  │
+│  ├─ 核心目标
+│  │   ├─ 在真实雪工况下完成一次可复核的工程级验证
+│  │   └─ 出清能源、结构、自治、运维风险
+│  │
+│  └─ 判断标准
+│      └─ 是否显著降低系统性失败概率
+│
+└─ Phase 2：平台能力复用
+   │
+   ├─ 前提条件
+   │   └─ Phase 1 工程验证成立
+   │
+   ├─ 可复用核心能力
+   │   ├─ 底盘与电驱系统
+   │   ├─ 能源与热管理系统
+   │   ├─ 自治控制框架
+   │   └─ 远程运维与失败控制体系
+   │
+   └─ 潜在扩展方向
+       ├─ 除草
+       ├─ 园区安防巡逻
+       └─ 工业巡检
+</code></pre><hr><h2>7. 季节复用逻辑</h2><p>商业园区客户具有天然重叠：</p><ul><li>冬季除雪</li><li>夏季绿化维护</li><li>常年巡检与安防</li></ul><p>平台底盘与系统能力复用。</p><p>客户关系不是季节性交易，而是长期服务关系。</p><hr><h2>8. 单机经济性（TCO：全生命周期总拥有成本）</h2><h3>8.1 单机TCO对比矩阵</h3><div class="table-wrap"><table><thead><tr><th>维度</th><th>人工 + 传统机械</th><th>SnowBot（全电自主）</th></tr></thead><tbody><tr><td>成本结构</td><td>OPEX为主，持续支付</td><td>CAPEX为主，分期折旧</td></tr><tr><td>人工成本</td><td>夜间费 + 极端天气溢价</td><td>无人工值守</td></tr><tr><td>能源成本</td><td>燃油波动</td><td>电力成本可预测</td></tr><tr><td>安全与保险</td><td>工伤与第三方风险高</td><td>责任结构可控</td></tr><tr><td>极端天气风险</td><td>人员无法到岗</td><td>系统按设计运行</td></tr><tr><td>成本波动性</td><td>高，不可预测</td><td>低，可工程化测算</td></tr><tr><td>维护方式</td><td>被动维修</td><td>计划性维护</td></tr><tr><td>规模复制</td><td>依赖人力调度</td><td>依赖设备部署</td></tr></tbody></table></div><hr><h3>8.2 核心判断</h3><blockquote><p>人工的本质风险是不可控的不确定性。</p></blockquote><hr><h3>8.3 回本逻辑</h3><blockquote><p>当无人除雪稳定替代人工不确定性，</p></blockquote><p><strong>单机预计 2–3 个雪季可实现回本。</strong></p><hr><h2>9. 公司定位</h2><p>我们不是贸易公司。</p><p>我们不是多功能设备公司。</p><p>我们是：</p><blockquote><p>我们构建的不是单一场景的功能型公司，而是工业级自治机器人平台。平台的核心资产，是在极端环境下实现高可靠运行的系统能力——涵盖底层硬件架构、能源与动力系统、感知决策框架以及可规模复制的运维体系。这些能力构成长期的技术壁垒和进入门槛。除雪是当前已落地的高难度验证场景，用于在真实对抗环境中验证平台能力并积累数据，而非公司的业务边界。公司的增长基于统一的底层能力体系：横向扩展工商业客户与应用场景，纵向深化自治与运维能力。在除雪、港口、矿区、安防巡检等高失败成本场景中，平台能力持续复用与强化，逐步形成结构性优势。我们的长期价值不依赖单一产品周期，而来自一个可持续扩张的工业自治能力平台。一旦底层能力成熟，场景扩展只是应用层延伸，公司的估值逻辑将从“产品销售”转向“能力结构”。</p></blockquote><p>SnowBot 是第一战场。</p><hr><h2>10. 工程验证里程碑与投入产出（18个月）</h2><hr><pre class="n-code-notion"><code class="language-plain text">Milestone 1（0–6个月）｜整机跑起来
+│
+├─ 投入（~40%）
+│   ├─ 核心工程能力搭建
+│   ├─ 样机系统集成
+│   └─ 低温与功率验证
+│
+├─ 产出
+│   ├─ 工程样机完成
+│   ├─ 首轮真实雪工况测试
+│   └─ 关键失效模式识别
+│
+└─ 判断
+    └─ 是否具备持续优化基础</code></pre><pre class="n-code-notion"><code class="language-plain text">Milestone 2（6–12个月）｜系统跑得稳
+│
+├─ 投入（~35%）
+│   ├─ 多轮真实雪工况验证
+│   ├─ 无人值守安全自治测试
+│   └─ 远程运维与降级体系完善
+│
+├─ 产出
+│   ├─ 稳定自主运行能力
+│   ├─ 失败概率显著下降
+│   └─ 工程闭环形成
+│
+└─ 判断
+    └─ 是否可稳定替代人工不确定性</code></pre><pre class="n-code-notion"><code class="language-plain text">Milestone 3（12–18个月）｜具备规模化基础
+│
+├─ 投入（~25%）
+│   ├─ 北美实地测试
+│   ├─ 合规与认证准备
+│   └─ 商业化部署评估
+│
+├─ 产出
+│   ├─ 可审计工程验证报告
+│   ├─ 商业化推进依据
+│   └─ 融资支撑基础
+│
+└─ 最终判断
+    └─ 是否完成可规模复制的工程级验证</code></pre><hr><h2>11. 资本路径与价值跃迁</h2><hr><h3>总体逻辑</h3><pre class="n-code-notion"><code class="language-plain text">每一阶段 = 消灭一类核心风险
+每一阶段 = 完成一次价值跃迁</code></pre><hr><h3>11.1 创始阵营阶段-工程生存验证</h3><pre class="n-code-notion"><code class="language-plain text">创始阵营
+├─ 目标
+│  └─ 极寒环境连续运行成立
+│
+├─ 消灭风险
+│  ├─ 低温运行可行性
+│  ├─ 电驱与负载匹配
+│  └─ Fail-safe 有效性
+│
+└─ 价值跃迁
+   └─ 构想 → 工程实体</code></pre><hr><h3>11.2  天使阶段-工程成立</h3><pre class="n-code-notion"><code class="language-plain text">天使阶段
+├─ 目标
+│  └─ 真实雪场稳定运行
+│
+├─ 消灭风险
+│  ├─ 无人值守安全
+│  └─ 客户场景适配
+│
+└─ 价值跃迁
+   └─ 工程可行 → 工程成立</code></pre><hr><h3>11.3  Pre-A 阶段-商业成立</h3><pre class="n-code-notion"><code class="language-plain text">Pre-A
+├─ 目标
+│  └─ 商业闭环成立
+│
+├─ 消灭风险
+│  ├─ 是否持续付费
+│  └─ 是否具备回本逻辑
+│
+└─ 价值跃迁
+   └─ 工程成功 → 商业成立</code></pre><hr><h3>11.4  A 轮阶段-规模成立</h3><pre class="n-code-notion"><code class="language-plain text">A 轮
+├─ 目标
+│  └─ 复制能力成立
+│
+├─ 消灭风险
+│  ├─ 批量生产一致性
+│  └─ 运维可复制性
+│
+└─ 价值跃迁
+   └─ 产品 → 规模结构</code></pre><hr><h3>11.5  B 轮阶段-结构壁垒形成</h3><pre class="n-code-notion"><code class="language-plain text">B 轮
+├─ 目标
+│  └─ 行业头部结构
+│
+├─ 消灭风险
+│  ├─ 易模仿风险
+│  └─ 价格竞争风险
+│
+└─ 价值跃迁
+   └─ 成长公司 → 行业结构参与者</code></pre><hr><h3>11.6  C / D 轮-平台成立</h3><pre class="n-code-notion"><code class="language-plain text">C / D
+├─ 目标
+│  └─ 跨场景能力复用
+│
+└─ 价值跃迁
+   └─ 单产品 → 平台结构</code></pre><hr><h3>11.7 IPO-行业地位确认</h3><pre class="n-code-notion"><code class="language-plain text">IPO
+└─ 条件
+   ├─ 多场景收入稳定
+   ├─ 工业级品牌壁垒
+   └─ 行业头部地位</code></pre><hr><h2>12. 核心团队</h2><h3>龚铁靖</h3><p>创始人 / 平台架构与全球战略负责人</p><p>教育背景：东北大学 · 机械自动化</p><h3>核心能力体系</h3><pre class="n-code-notion"><code class="language-plain text">龚铁靖
+│
+├─ 平台方向与战略判断
+│   ├─ 极端环境赛道选择
+│   ├─ 产品矩阵与场景规划
+│   └─ 平台长期演进路径设计
+│
+├─ 中欧美资源整合能力
+│   ├─ 北美与欧洲市场渠道布局
+│   ├─ 政商资源对接能力
+│   ├─ 国际化公司结构搭建
+│   └─ 中国供应链整合能力
+│
+├─ 团队构建与组织能力
+│   ├─ 核心团队搭建
+│   ├─ 创始阵营结构设计
+│   ├─ 统一行动机制建立
+│   └─ 长期激励与控制权设计
+│
+└─ 工程与资本双轮驱动能力
+    ├─ 技术边界与风险控制判断
+    ├─ 融资节奏设计
+    ├─ 资本结构规划
+    └─ 全球化扩张路径设计</code></pre><hr><h3>龚继锋</h3><p>联合创始人 / 全球产业链与资本战略负责人</p><p>教育背景：澳大利亚国立大学（ANU） · 项目管理硕士</p><h3>核心能力体系</h3><pre class="n-code-notion"><code class="language-plain text">龚继锋
+│
+├─ 产业资源整合能力
+│   ├─ 欧洲高端制造资源
+│   ├─ 中国新能源产业链体系
+│   └─ 跨国产业协同管理
+│
+├─ 规模化复制能力设计
+│   ├─ 从样机到批量交付
+│   ├─ 成本与效率结构优化
+│   └─ 供应链稳定性建立
+│
+└─ 资本与产业协同
+    ├─ 产能扩张节奏规划
+    ├─ 制造投入结构设计
+    └─ 产业化风险控制</code></pre><hr><h3>颜其锋</h3><p>合伙人 / 工业设计与国际标准战略负责人</p><p>教育背景：芬兰阿尔托大学（Aalto University） · 新媒体学博士</p><p>现任：</p><p>深圳市鹏城工业设计研究院院长</p><p>南方科技大学、湖南大学访问教授</p><p>曾任：</p><p>诺基亚研究院首席设计师</p><p>荣誉与成就：</p><ul><li>光华龙腾奖“中国设计业十大杰出青年”</li><li>多次获得 IDEA 与红点国际设计大奖</li><li>拥有20余项国际发明专利</li><li>主导 IEEE-11073 国际技术标准制定</li><li>“中国标准创新贡献奖”一等奖</li></ul><h3>核心能力体系</h3><pre class="n-code-notion"><code class="language-plain text">颜其锋
+│
+├─ 国际级工业设计体系
+│   ├─ 重载设备设计语言构建
+│   ├─ 极端环境产品形态规范
+│   ├─ 平台级设计标准制定
+│   └─ 高端产品识别体系建立
+│
+├─ 国际标准与技术规范能力
+│   ├─ IEEE国际标准制定经验
+│   ├─ 数据与设备接口规范理解
+│   └─ 标准化战略规划能力
+│
+├─ 国际品牌与行业高度
+│   ├─ 诺基亚研究院全球经验
+│   ├─ 国际设计大奖认可
+│   ├─ 学术与产业双重影响力
+│   └─ 高端客户信任背书
+│
+└─ 欧洲与高层资源网络
+    ├─ 北欧设计与科技资源
+    ├─ 国际产业合作通道
+    └─ 高层次交流平台</code></pre><hr><h3>王健</h3><p>合伙人 / 自治系统与智能控制负责人</p><p>教育背景：</p><p>中南大学 · 机械工程（机器人工程）博士</p><p>中南大学 · 车辆工程本科</p><h3>核心能力体系</h3><pre class="n-code-notion"><code class="language-plain text">王健
+│
+├─ 重载移动机器人控制能力
+│   ├─ 无人车算法与控制经验
+│   ├─ 高负载作业机器人系统开发
+│   ├─ 挖掘力在线估计系统研发
+│   └─ 复杂地形运动控制能力
+│
+├─ 高对抗场景机器人经验
+│   ├─ 危爆救灾机器人项目负责人
+│   ├─ 埋地管道抢修机器人核心成员
+│   ├─ 国家重大科研仪器专项成员
+│   └─ 极端环境作业经验
+│
+├─ 户外工业机器人落地能力
+│   ├─ 光伏清扫自主机器人主导研发
+│   ├─ 多场站实际部署
+│   └─ 长周期运行优化经验
+│
+└─ 平台级自治系统构建
+    ├─ 感知-决策-执行闭环设计
+    ├─ 作业力学与控制协同
+    └─ 工业级稳定性设计</code></pre><h3>甄文胜</h3><p>合伙人 / 产业生态与资本协同负责人</p><p>教育背景：西安交通大学 · 动力系 · 流体机械专业</p><h3>核心能力体系</h3><pre class="n-code-notion"><code class="language-plain text">甄文胜
+│
+├─ 产业生态资源整合
+│   ├─ 机器人行业高层网络
+│   ├─ 核心供应链资源触达
+│   └─ 战略合作体系构建
+│
+├─ 资本协同能力
+│   ├─ 样机完成后的资本对接
+│   ├─ 战略投资人引入
+│   └─ 融资结构协同设计
+│
+└─ 高端客户入口协同
+    ├─ 政企客户资源
+    ├─ 高对抗场景落地推动
+    └─ 长期合作模式构建</code></pre><hr><h3>陈超</h3><p>合伙人 / 产品工程与平台实现负责人</p><p>教育背景：机械设计制造及其自动化 </p><h3>核心能力体系</h3><pre class="n-code-notion"><code class="language-plain text">陈超
+│
+├─ 工业级产品工程实现
+│   ├─ 光伏清洁机器人设计经验
+│   ├─ 商用清洁机器人产品经验
+│   └─ AGV及户外专用车辆结构经验
+│
+├─ 产品平台工程化
+│   ├─ 样机结构与整机设计
+│   ├─ 研发到量产转化
+│   └─ 成本与结构优化
+│
+└─ 研发与交付协同
+    ├─ 研发管理能力
+    ├─ 专利布局能力
+    └─ 产品可靠性与稳定性提升</code></pre><hr><h3>团队整体闭环结构</h3><pre class="n-code-notion"><code class="language-plain text">龚铁靖（战略与平台架构）
+        +
+王健（核心技术与自治系统）
+        +
+陈超（产品工程与平台实现）
+        +
+龚继锋（产业化与规模放大）
+        +
+甄文胜（资本与产业生态入口）
+        +
+颜其锋（工业设计与国际标准战略）
+        =
+可持续扩张的工业级自治机器人平台</code></pre><hr><h2>14. 市场基础与客户来源逻辑</h2><h3>14.1 现有产业基础</h3><p>创始团队长期深耕能源与电力系统领域，在北美工商业储能、微电网与能源管理系统（EMS）场景中积累了稳定的客户网络。</p><p>该类客户的典型特征包括：</p><ul><li>拥有自有园区或大型物业资产</li><li>对基础设施连续运行有高可靠性要求</li><li>已具备电力系统升级与能源数字化基础</li><li>管理结构相对成熟，具备长期技术采购能力</li></ul><p>这类客户群体与工业级除雪机器人目标市场高度重叠。</p><hr><h3>14.2 客户结构重叠性分析</h3><p>工业级除雪机器人的核心应用场景包括：</p><ul><li>商业园区</li><li>物流中心</li><li>数据中心</li><li>医疗机构</li><li>教育机构</li><li>大型制造基地</li></ul><p>上述场景在能源系统层面通常具备：</p><ul><li>高功率负载</li><li>应急电力系统</li><li>电气合规与安全管理体系</li><li>夜间无人或低人员值守场景</li></ul><p>因此，能源基础设施升级与园区无人作业升级在客户组织层面具备天然协同性。</p><hr><h3>14.3 需求来源的现实基础</h3><p>除雪机器人项目并非脱离现有业务体系的独立构想。</p><p>其启动逻辑之一来源于：</p><ul><li>北美部分园区客户在长期合作过程中提出的明确需求</li><li>对夜间极端天气下运维不确定性的实际痛点反馈</li><li>对无人化、低排放解决方案的现实探索</li></ul><p>在既有能源与电力系统服务关系基础上，园区客户对“极端环境无人作业能力”的关注逐步形成。</p><p>这构成了除雪机器人项目早期需求验证的现实背景。</p><hr><h3>14.4 市场进入路径的结构优势</h3><p>相比纯硬件创业路径，当前市场进入具有以下结构优势：</p><ol><li>客户群体已存在，非完全陌生市场</li><li>园区资产方具备长期服务合作基础</li><li>设备部署可与能源系统协同规划</li><li>具备跨产品体系的长期服务关系延展空间</li></ol><p>这意味着：</p><blockquote><p>市场拓展并非完全依赖渠道铺设，而是在既有产业网络基础上进行能力延伸。</p></blockquote><hr><h3>14.5 战略意义</h3><p>该市场基础的价值不在短期销售，而在于：</p><ul><li>降低冷启动阶段的商业不确定性</li><li>提供真实高标准应用场景</li><li>加速工程验证向商业验证过渡</li><li>为后续规模复制提供首批高质量样本客户</li></ul><p>因此，SnowBot 的市场逻辑并非“从零开拓新赛道”，而是在既有工商业基础设施客户群体中，延伸一项结构高度匹配的新能力。</p><hr><h2>15. 终章 · 投资判断</h2><pre class="n-code-notion"><code class="language-plain text">高工程门槛
+玩家少
+需求长期存在</code></pre><p>这是一个安静但真实的赛道。</p><hr><p>投资的不是一台机器，而是一条能力成长路径：</p><pre class="n-code-notion"><code class="language-plain text">工程能力
+→ 商业验证
+→ 可复制规模</code></pre><p>一步一步建立确定性。</p><hr><p>资本的意义很简单：</p><pre class="n-code-notion"><code class="language-plain text">在能力成型前参与
+在结构清晰后放大</code></pre><p>—— 全文 ——</p><p></p></article>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 ARCBOS Systems Inc. — ENGINEERED FOR EXTREME CONDITIONS. Powered by GitHub Pages | Contact:</span>
+    <a href="mailto:info@arcbos.com">info@arcbos.com</a>
+    <span class="sep">·</span>
+    <a class="icon" href="https://www.linkedin.com/in/gongtiejing" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v13H0zM7 8h4.8v1.8h.07C12.54 8.94 14.17 8 16.6 8c5.06 0 6 3.33 6 7.66V21h-5v-6.5c0-1.55-.03-3.55-2.17-3.55-2.17 0-2.5 1.69-2.5 3.43V21H7V8z"/>
+      </svg>
+    </a>
+    <a class="icon" href="https://github.com/enxpower" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-1.1-.02-1.99-3.06.66-3.71-1.3-3.71-1.3-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.56 1.19 3.18.91.1-.72.38-1.19.69-1.46-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.42.11-2.96 0 0 .93-.3 3.05 1.13a10.7 10.7 0 0 1 2.78-.37c.94 0 1.88.13 2.78.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.54.22 2.68.11 2.96.71.77 1.13 1.75 1.13 2.95 0 4.22-2.58 5.14-5.03 5.41.39.33.73.98.73 1.98 0 1.43-.01 2.59-.01 2.95 0 .29.2.64.76.53A10.54 10.54 0 0 0 23 11.5C23 5.24 18.27.5 12 .5z"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+</main>
+
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    displayMath: [['$$','$$']]
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.min.js"></script>
+
+</body></html>
